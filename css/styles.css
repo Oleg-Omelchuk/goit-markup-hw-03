@@ -1,0 +1,252 @@
+/* Селекторы, их ранги:
+- Универссальный *
+- Тег p
+- клас .header-link
+- Атрибута [href]
+- ID #text
+- Дети .header > a
+- Потомки .header a
+- сосед .header+a
+- все соседи ниже .header~.header
+- .header.link - именно один класс с родителя
+----------------------------------------------------*/
+/*НАША палитра:
+- основной цвет #212121
+- вторичный цвет #757575
+- вторичный цвет фона белый #F5F4FA
+- вторичный цвет фона черный #2F303A
+- белый #FFFFFF
+- бекграунд акцент #2196F3 */
+
+:root {
+  --main-text-color: #212121;
+  --link-hover-color: #2196f3;
+  --bgc-main-color: #ffffff;
+  --bcg-secondary-color: #2f303a;
+  --secondary-text-clor: #757575;
+  --text-color-white: #ffffff;
+}
+/* ------------------------Общие селекторы - Утилиты */
+html{
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-weight: 400;
+  background-color: var(--bgc-main-color);
+  color: var(--main-text-color);
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+header {
+  background-color: var(--bgc-main-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/*----------------------------Оформление логотипа */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.textlogo-black {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.logo:focus {
+  color: var(--link-hover-color);
+}
+/*---------------------- Список навигации сайта */
+.site-nav .nav-link,
+.contacts-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.contacts-link {
+  color: var(--secondary-text-clor);
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--link-hover-color);
+}
+.site-nav .nav-link.current {
+  color: var(--link-hover-color);
+}
+
+/*--------------------------Main Блок Герой */
+.hero {
+  background-color: var(--bcg-secondary-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+}
+.hero-btn {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: #2196f3;
+  color: var(--text-color-white);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+/*---------------------- Секция "Чем мы занимаемся?*/
+.about {
+  background-color: var(--bgc-main-color);
+  color: var(--main-text-color);
+}
+.about-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.about-title + p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-clor);
+}
+.subtitle-about {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*--------------------------Секция Команда */
+.team {
+  background-color: #f5f4fa;
+  color: var(--main-text-color);
+}
+.team-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.name,
+.name + p {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.name + p {
+  color: var(--secondary-text-clor);
+}
+/*---------------------Футер--------------------- */
+.textlogo-white {
+  color: #ffffff;
+}
+.footer {
+  background-color: var(--bcg-secondary-color);
+  color: var(--bgc-main-color);
+  text-decoration: none;
+}
+.footer-list a {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color-white);
+}
+.footer-list .footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover,
+.footer-link:focus,
+.link-adress:hover {
+  color: var(--link-hover-color);
+}
+/* ----------------portfolio.html--------------- */
+.work {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bgc-main-color);
+  color: var(--main-text-color);
+}
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: var(--link-hover-color);
+  color: var(--bgc-main-color);
+}
+.work-link:hover,
+.work-link:focus {
+  color: var(--link-hover-color);
+}
+.work-pre-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.work-text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-clor);
+}
