@@ -26,6 +26,7 @@
   --secondary-text-clor: #757575;
   --text-color-white: #ffffff;
   --work-border-color: 1px solid #eeeeee;
+  --header-border: 1px solid #ececec;
 }
 /* ------------------------Общие селекторы - Утилиты */
 html {
@@ -80,6 +81,10 @@ header {
   clip-path: inset(50%);
   margin: -1px;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ____________________КОНТЕЙНЕР_________________ */
 .conteiner {
   margin: 0 auto;
@@ -117,6 +122,9 @@ header {
 /*---------------------- Список навигации сайта */
 header .conteiner {
   display: flex;
+}
+header {
+  border-bottom: var(--header-border);
 }
 .nav-conteiner {
   display: flex;
@@ -206,7 +214,6 @@ header .conteiner {
 .about-list {
   display: flex;
   align-items: center;
-  padding-top: 90px;
 }
 .about-list .about-item:not(:last-child) {
   margin-right: 30px;
@@ -250,7 +257,6 @@ header .conteiner {
   margin-right: 30px;
 }
 .pic-item {
-  margin-bottom: 94px;
   width: 370px;
 }
 /*--------------------------Секция Команда */
@@ -269,14 +275,13 @@ header .conteiner {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
-  padding-top: 95px;
 }
 .team-list {
   display: flex;
 }
 .team-item {
   width: 380px;
-  margin-bottom: 94px;
+
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -350,13 +355,11 @@ header .conteiner {
   background-color: var(--bgc-main-color);
   color: var(--main-text-color);
 }
-.work .conteiner {
-  border-top: 1px solid #ececec;
-}
+
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-top: 95px;
+
   margin-bottom: 35px;
 }
 .filter-list .filter-item:not(:last-child) {
@@ -385,7 +388,6 @@ header .conteiner {
 .work-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 95px;
 }
 .work-item {
   width: calc((100% - 60px) / 3);
