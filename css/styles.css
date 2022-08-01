@@ -228,6 +228,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .about-title + p {
   font-family: 'Roboto', sans-serif;
