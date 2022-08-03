@@ -67,7 +67,6 @@ body {
 }
 header {
   background-color: var(--bgc-main-color);
-  height: 80px;
 }
 .visually-hidden {
   position: absolute;
@@ -91,7 +90,6 @@ header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
 }
 
 /*----------------------------Логотипа */
@@ -121,9 +119,12 @@ header {
 /*---------------------- Список навигации сайта */
 header .conteiner {
   display: flex;
+  align-items: center;
 }
 header {
   border-bottom: var(--header-border);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-conteiner {
   display: flex;
@@ -151,8 +152,6 @@ header {
 }
 .contact-list {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
   margin-left: auto;
 }
 .contact-list .item:not(:last-child) {
@@ -177,6 +176,8 @@ header {
   text-align: center;
   margin: 0 auto;
   align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -186,8 +187,10 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-white);
-  margin-bottom: 10px;
-  padding-top: 200px;
+  margin-bottom: 30px;
+  max-width: 696px;
+  margin-left: 452px;
+  margin-right: 452px;
 }
 .hero-btn {
   display: inline-block;
@@ -203,7 +206,6 @@ header {
   min-width: 200px;
   text-align: center;
   border: 1px solid transparent;
-  margin-bottom: 200px;
 }
 /*---------------------- Секция "Чем мы занимаемся?*/
 .about {
@@ -259,6 +261,11 @@ header {
 .pic-item {
   width: 370px;
 }
+.about-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*--------------------------Секция Команда */
 .team {
   background-color: #f5f4fa;
@@ -274,13 +281,13 @@ header {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
 }
 .team-item {
-  width: 380px;
+  width: 270px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -300,12 +307,12 @@ header {
   letter-spacing: 0.03em;
 }
 .name {
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 .name + p {
   color: var(--secondary-text-clor);
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 /*---------------------Футер--------------------- */
 .textlogo-white {
@@ -315,16 +322,15 @@ header {
   background-color: var(--bcg-secondary-color);
   color: var(--bgc-main-color);
   text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   display: inline-block;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  margin-right: auto;
+  margin-bottom: 20px;
 }
+
 .footer-adress {
-  margin-bottom: 60px;
-  margin-right: auto;
 }
 .footer-list a {
   text-decoration: none;
@@ -334,6 +340,9 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color-white);
+}
+.footer-item:not(:last-of-type) {
+  margin-bottom: 9px;
 }
 
 .footer-list .footer-link {
@@ -359,8 +368,7 @@ header {
 .filter-list {
   display: flex;
   justify-content: center;
-
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 .filter-list .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -379,6 +387,7 @@ header {
   background: #f5f4fa;
   border-radius: 4px;
   border: none;
+  padding: 6px 22px;
 }
 .filter-btn:focus,
 .filter-btn:hover {
@@ -410,8 +419,7 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-left: 24px;
-  padding-right: 24px;
+  color: var(--main-text-color);
   margin-bottom: 4px;
 }
 .work-text {
@@ -420,15 +428,12 @@ header {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-clor);
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 20px;
 }
 .work-img {
-  margin-bottom: 20px;
 }
 .work-border {
   border-right: var(--work-border-color);
   border-left: var(--work-border-color);
   border-bottom: var(--work-border-color);
+  padding: 20px 24px;
 }

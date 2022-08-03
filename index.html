@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -39,11 +39,8 @@
     </header>
     <main>
       <!--Блок с заголовком-->
-      <section class="hero section">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-btn">Заказать услугу</button>
       </section>
 
@@ -75,18 +72,38 @@
             </li>
           </ul>
           <h2 class="visually-hidden">Преимущества компании</h2>
-          <h3 class="subtitle-about">Чем мы занимаемся</h3>
-          <ul class="pic-list list">
-            <li class="pic-item">
-              <img src="./images/pc1.jpg" alt="картинка1" width="370" height="294" />
-            </li>
-            <li class="pic-item">
-              <img src="./images/pc2.jpg" alt="картинка2" width="370" height="294" />
-            </li>
-            <li class="pic-item">
-              <img src="./images/pc3.jpg" alt="картинка3" width="370" height="294" />
-            </li>
-          </ul>
+          <section class="about-picture">
+            <h3 class="subtitle-about">Чем мы занимаемся</h3>
+            <ul class="pic-list list">
+              <li class="pic-item">
+                <img
+                  class="about-img"
+                  src="./images/pc1.jpg"
+                  alt="картинка1"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li class="pic-item">
+                <img
+                  class="about-img"
+                  src="./images/pc2.jpg"
+                  alt="картинка2"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li class="pic-item">
+                <img
+                  class="about-img"
+                  src="./images/pc3.jpg"
+                  alt="картинка3"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </ul>
+          </section>
         </div>
       </section>
       <!--Секция "Наша команда"-->
@@ -126,12 +143,12 @@
         >
         <address class="footer-adress">
           <ul class="footer-list list">
-            <li>
+            <li class="footer-item">
               <a class="link-adress link" href="https://goo.gl/maps/HgSEHA6W2RSiuSY3A"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-item">
               <a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li><a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
