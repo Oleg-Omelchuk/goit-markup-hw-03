@@ -49,6 +49,7 @@ p {
 *::after {
   box-sizing: inherit;
 }
+
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   font-weight: 400;
@@ -56,6 +57,11 @@ body {
   color: var(--main-text-color);
   margin: 0 auto;
   max-width: 1600px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .link {
   text-decoration: none;
@@ -115,7 +121,9 @@ header {
 .logo:focus {
   color: var(--link-hover-color);
 }
-
+.item:nth-child(n) {
+  margin-bottom: 0px;
+}
 /*---------------------- Список навигации сайта */
 header .conteiner {
   display: flex;
@@ -123,8 +131,6 @@ header .conteiner {
 }
 header {
   border-bottom: var(--header-border);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .nav-conteiner {
   display: flex;
@@ -141,8 +147,8 @@ header {
 }
 .nav-link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav {
   display: flex;
@@ -159,6 +165,8 @@ header {
 }
 .contacts-link {
   color: var(--secondary-text-clor);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus,
@@ -187,10 +195,8 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-white);
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   max-width: 696px;
-  margin-left: 452px;
-  margin-right: 452px;
 }
 .hero-btn {
   display: inline-block;
@@ -222,7 +228,9 @@ header {
 .about-item {
   width: 270px;
 }
-
+.about-item:nth-child(n) {
+  margin-bottom: 0px;
+}
 .about-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -246,7 +254,6 @@ header {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 95px;
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
@@ -261,6 +268,10 @@ header {
 .pic-item {
   width: 370px;
 }
+.pic-item:nth-child(n) {
+  margin-bottom: 0px;
+}
+
 .about-img {
   display: block;
   max-width: 100%;
@@ -288,11 +299,13 @@ header {
 }
 .team-item {
   width: 270px;
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-item:nth-child(n) {
+  margin-bottom: 0px;
 }
 .team-list .team-item:not(:last-child) {
   margin-right: 30px;
@@ -375,6 +388,9 @@ header {
 }
 .filter-item {
   align-items: center;
+}
+.filter-item:nth-child(n) {
+  margin-bottom: 0px;
 }
 .filter-btn {
   font-family: inherit;
